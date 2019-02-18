@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="posts">
+  <div class="post py3">
+    <p class="post-meta">{{ page.date | date: site.date_format }}</p>
+    <h3 style="margin-top: 0;" class="h1 post-title">{{ page.title }}</h3>
+    <p class="post-summary">
+      {% if summary %}
+      {{ summary }}
+      {% else %}
+      {{ excerpt }}
+      {% endif %}
+    </p>
+  </div>
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+<!-- {% include post_footer.html %} -->

@@ -1,0 +1,33 @@
+# Site settings
+title:       Nightly Nexus
+email:       eric@nightlynexus.com
+author:      Eric Cochran
+description: Eric Cochran's blog
+baseurl:     "" # the subpath of your site, e.g. /blog/
+url:         http://blog.nightlynexus.com # the base hostname & protocol for your site
+
+github_username: NightlyNexus
+twitter_username: Eric_Cochran
+
+header-title: Nightly Nexus, Eric Cochran's blog about Android development
+
+date_format: "%b %-d, %Y"
+
+text:
+  pagination:
+    newer: Newer
+    older: Older
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  compressed: true
+paginate:     4
+plugins:
+  - jekyll-paginate
+
+permalink: /:title/

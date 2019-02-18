@@ -1,0 +1,40 @@
+<header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <div class="site-title" style="display:block; overflow:hidden;">
+
+        <a href="{{ site.baseurl }}/" style="display:block; float:left;">
+          <img width="64px" height="64px" alt="Eric Cochran" src="https://pbs.twimg.com/profile_images/597902909846618112/VfNzOzjk.jpg">
+        </a>
+
+        <div style="float:left;" class="footer-col-wrapper">
+          <div class="footer-col-1">
+            <ul style="list-style: none;" class="contact-list">
+              <li><a href="{{ site.baseurl }}/">{{ site.title }}</a></li>
+              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="float:left;" class="footer-col-2">
+          <ul style="list-style: none;" class="social-media-list">
+            {% if site.github_username %}
+            <li>
+              {% include icon-github.html username=site.github_username %}
+            </li>
+            {% endif %}
+
+            {% if site.twitter_username %}
+            <li>
+              {% include icon-twitter.html username=site.twitter_username %}
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      <nav class="site-nav">
+        {% include navigation.html %}
+      </nav>
+    </div>
+  </div>
+</header>
