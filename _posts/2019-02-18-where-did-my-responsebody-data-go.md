@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Where did my ResponseBody data go?
+title:      Where Did My ResponseBody Data Go?
 date:       2019-02-18 14:00:00
 summary:    The case of lost bytes in a Retrofit Converter.
 categories: Android
