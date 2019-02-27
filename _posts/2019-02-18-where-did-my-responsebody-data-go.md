@@ -5,6 +5,8 @@ date:       2019-02-18 14:00:00
 summary:    The case of lost bytes in a Retrofit Converter.
 categories: Android
 ---
+<b>NOTE: This Retrofit behavior has been [fixed](https://github.com/square/retrofit/pull/3035/) for Retrofit 2.6.0.</b>
+
 I am writing an [answer for a Stack Overflow question](https://stackoverflow.com/a/53640537/1696171), and I have with a bug that is not immediately obvious to me.
 
 I want to skip a prefix in an okhttp3.ResponseBody, so that I can forward this body on to be handled without the prefixed bytes. I have code like the following.
